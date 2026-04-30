@@ -1,17 +1,9 @@
-{% load static %}
+{% extends "layout.html" %}
 
-<!DOCTYPE html>
+{% block title %}
+Home Page
+{% endblock %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Home Page</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
-
-<h1>Welcome to My Home Page</h1>
-
-</body>
-</html>
+{% block content %} 
+<h1 class="bg-green-500 text-3xl">The Coffee aur Djano with | Home Page</h1>
+{% endblock %}

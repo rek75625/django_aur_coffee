@@ -20,7 +20,9 @@ from . import views
 
 urlpatterns = [
     path('admin/',admin.site.urls),
-    path('home/',views.home_view,name="homes"),
+    path('home/', views.home_view, name='home'),
     path('coffee/',include("coffee.urls")),
 
+
+    path("__reload__/",include("django_browser_reload.urls"))
 ]
